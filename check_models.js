@@ -1,7 +1,7 @@
-
+import 'dotenv/config';
 import { GoogleGenAI } from "@google/genai";
 
-const apiKey = "AIzaSyAnQ4X0fvroL0Cq5IwuOiPB-5Sjyvv0CbY"; // Key 1
+const apiKey = process.env.VITE_API_KEY_1; // Use env var instead of hardcoded key
 
 async function checkModels() {
   try {
